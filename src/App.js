@@ -16,7 +16,9 @@ function App() {
         <Link to={'/'}><MainHeader /></Link>
         <Routes>
           <Route path='/' element={<Dashboard />} />
-          <Route path='filmlist' element={<FilmList />} />
+          <Route path='filmlist' element={<FilmList />}>
+            <Route path=':page' element={<FilmList />}></Route>
+          </Route>
           <Route path='film'> 
             <Route path=':filmid' element={<Film />}></Route>
           </Route>
