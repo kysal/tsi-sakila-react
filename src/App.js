@@ -5,6 +5,7 @@ import MainHeader from './components/MainHeader';
 import Dashboard from './components/Dashboard';
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import FilmList from './components/FilmList';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <MainHeader />
         <Routes>
           <Route path='/' element={<Dashboard />} />
+          <Route path='/filmlist' element={<FilmList />} />
         </Routes>
       </div>
     </Router>
