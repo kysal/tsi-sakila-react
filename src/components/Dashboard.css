@@ -1,0 +1,17 @@
+
+table.tab-holder {
+    width: 100%;
+    padding: 20px
+}
+
+td.tab {
+    background-color: lightgray;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.tab-content {
+    color: black;
+    text-align: center;
+}
