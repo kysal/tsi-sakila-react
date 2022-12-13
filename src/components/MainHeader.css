@@ -1,0 +1,13 @@
+.main-title {
+    background-color: tomato;
+    border-radius: 10px;
+    text-align: center;
+    height: 60px;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    color: white;
+}
