@@ -1,0 +1,11 @@
+.main-content {
+    padding: 20px;
+    margin: 20px;
+    width: calc(100% - 100px);
+    display: block;
+    position:absolute;
+
+    background-color: lightgray;
+    border-radius: 20px;
+    color: black;
+}

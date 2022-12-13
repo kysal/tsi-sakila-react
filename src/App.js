@@ -7,6 +7,7 @@ import Dashboard from './components/Dashboard';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import FilmList from './components/FilmList';
 import Film from './components/Film';
+import Actor from './components/Actor';
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
           <Route path='filmlist' element={<FilmList />} />
           <Route path='film'> 
             <Route path=':filmid' element={<Film />}></Route>
+          </Route>
+          <Route path='actor'>
+            <Route path=':actorid' element={<Actor />}></Route>
           </Route>
         </Routes>
       </div>
