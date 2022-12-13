@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './FilmList.css';
 
 class FilmList extends React.Component {
@@ -40,7 +41,7 @@ class FilmList extends React.Component {
                 </form>
             </div>
             <div id="film-list">
-                {this.state.films.map(film => (<div className="film-list-item" key={film.filmId}>{film.title}</div>))}
+            {this.state.films.map(film => (<Link to={"/film/" + film.filmId} key={film.filmId}><div className="film-list-item">{film.title}</div></Link>))}
             </div>
             </div>
         );
