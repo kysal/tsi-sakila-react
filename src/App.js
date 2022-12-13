@@ -4,7 +4,7 @@ import './App.css';
 import MainHeader from './components/MainHeader';
 import Dashboard from './components/Dashboard';
 
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import FilmList from './components/FilmList';
 import Film from './components/Film';
 import Actor from './components/Actor';
@@ -13,7 +13,7 @@ function App() {
   return (
     <Router> 
       <div className='app-padding'>
-        <MainHeader />
+        <Link to={'/'}><MainHeader /></Link>
         <Routes>
           <Route path='/' element={<Dashboard />} />
           <Route path='filmlist' element={<FilmList />} />

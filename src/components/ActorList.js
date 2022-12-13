@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-
+import { Link } from "react-router-dom";
 
 
 
@@ -20,7 +20,11 @@ function ActorList(props) {
 
     return (
         <div>
-            {actorList.map(actor => (<div key={actor.actorId}>{actor.firstName + " " + actor.lastName}</div>))}
+            {actorList.map(actor => (
+                <Link to={'/actor/' + actor.actorId} key={actor.actorId}>
+                    <div>{actor.firstName + " " + actor.lastName}</div>
+                </Link>
+            ))}
         </div>
     )
 
